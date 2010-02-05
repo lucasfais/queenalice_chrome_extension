@@ -1,0 +1,22 @@
+{
+  "name": "QueenAlice Chrome Extension",
+  "version": "0.1",
+  "description": "Shows the games that are waiting for your move on QueenAlice.com.",
+  "background_page": "background.html",
+  "browser_action": {
+    "default_icon": "logo_mono.png"
+  },
+  "icons": {
+    "128": "logo_128.png"
+  },
+  "permissions": [
+    "tabs",
+    "http://www.queenalice.com/"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["http://jquery.com/*"],
+      "js": ["jquery-1.4.1.min.js", "queenalice.js"]
+    }
+  ]
+}

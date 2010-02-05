@@ -1,0 +1,11 @@
+//In the background page:
+<html>
+  <script src='jquery-1.4.1.min.js'></script>
+  <script src='queenalice.js'></script>
+  <script>
+    //React when a browser action's icon is clicked.
+    chrome.browserAction.onClicked.addListener(function(tab) {
+      queenalice.open_mygames();
+    });
+  </script>
+</html>
