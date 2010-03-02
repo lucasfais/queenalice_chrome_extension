@@ -17,12 +17,11 @@ var queenalice = {
 
       var panel_text = '';
       var panel_tooltip = 'No game waiting your move';
-      var image = 'logo_mono.png';
+      var image = 'logo.png';
       
       if (gamesWaitingMatches && gamesWaitingMatches.length > 0) {
         panel_text = gamesWaitingMatches[1];
         panel_tooltip = gamesWaitingMatches[0] + ' your move';
-        image = 'logo.png';
       }
       else {
         var invalidLoginRe = new RegExp("You need to sign in to view this page", "g");
@@ -30,6 +29,7 @@ var queenalice = {
 
         if (invalidLoginMatches && invalidLoginMatches.length > 0) {
           panel_tooltip = "Click here to sign in QueenAlice.com for game notifications.";
+          image = 'logo_mono.png';
         }
       }
       
