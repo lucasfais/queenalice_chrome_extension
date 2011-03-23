@@ -1,6 +1,6 @@
 {
   "name": "QueenAlice Chrome Extension",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "Shows the games that are waiting for your move on QueenAlice.com.",
   "background_page": "background.html",
   "browser_action": {
